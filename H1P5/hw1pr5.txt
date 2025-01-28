@@ -1,0 +1,75 @@
+﻿Exercise 1:
+        Part 1: There are a total of 16 different possible surroundings.
+NEWS
+XXXX
+NEWX
+NEXX
+XXEW
+XXWS
+XESW
+XEWX
+XEWS
+NXEW
+NXSW
+NXSE
+NEXS
+NWXS
+NWXX
+EXXX
+
+
+You can repeat steps for specific parts of the map, for example if the bot gets stuck on the north wall you can write a rule that it always turns east, if it somehow gets stuck in a corner and doesn’t know where to go then you can use a different state to give new instructions on what to do. Eventually the bot will find itself in the same scenario as before which was that it was stuck in the north wall. It can then use the instructions from state 0 meaning you can repeat instructions. 100 states is more than enough. 
+
+
+Part 2: 
+0 xExs -> N 0 (Picobot sees an east wall and a south wall. It moves north to continue snaking through the grid and stays in State 0.)
+0 xExx -> N 0 (Picobot sees an east wall but no south wall. It moves north to the next row and stays in State 0.)
+0 xxxx -> N 0 (Picobot sees no walls in any direction (open space). It moves north to continue the traversal and stays in State 0.)
+0 xxxS -> N 0 (Picobot sees an open space and a south wall (end of the row). It moves north to the next row and stays in State 0.)
+0 xxWS -> N 0(Picobot sees a west wall and a south wall (in a corner position). It moves north to the next row and stays in State 0.)
+0 xxWx -> N 0 (Picobot sees a west wall and an open space to the east. It moves north to the next row and stays in State 0.)
+0 NxWx -> E 0 (Picobot sees a north wall and a west wall. It moves east and stays in State 0 to continue across the row.)
+0 Nxxx -> S 1 (Picobot encounters a north wall, indicating it's at the top row. It moves south to the next row and transitions to State 1 to start moving west.)
+1 xxxx -> S 1 (Picobot sees no walls (open space) and moves south to continue its traversal. It stays in State 1.)
+1 xxxS -> E 0 (Picobot encounters open space and a south wall (end of the row). It moves east and transitions to State 0 to continue snaking across the grid in the opposite direction.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exercise 2:
+Part 1:
+
+
+Yes, not knowing the starting position does mean that we will not know how many surroundings picobot will observe. It could be in a corner being able to look at 2 surroundings or it could be in the middle being able to look at all 4 surroundings. But I could also argue that  it doesn’t change how many surroundings it could observe because even if it was at a corner it still would be 4 surroundings but 2 are walls, and if it was in the middle it would also be 4 surroundings. 
+
+
+I can reuse some of the instructions from part 1 especially the part that tells picobot to snake around the grid because that can be useful no matter where picobot is. 
+
+
+Part 2: 
+0 Nxxx -> W 1 (Move west if there’s a north wall, transition to State 1)
+0 xxxx -> N 0 (Move north if there are no walls in the surroundings)
+0 xxxS -> N 0 (Move north if there’s a south wall at the end of the row)
+0 xxWS -> N 2 (Move north if there’s a west wall and a south wall, transition to State 2)
+1 Nxxx -> S 1 (Move south if there’s a north wall)
+1 NxWx -> S 2 (Move south if there’s a north wall and a west wall, transition to State 2)
+1 xxxx -> S 1 (Move south if there are no walls in the surroundings)
+1 xxxS -> W 0 (Move west if there’s a south wall, transition back to State 0)
+2 xxWx -> N 2 (Move north if there’s a west wall and no other walls, stay in State 2)
+2 NxWx -> E 2 (Move east if there’s a north wall and a west wall, stay in State 2)
+2 Nxxx -> E 2 (Move east if there’s a north wall with no other walls, stay in State 2)
+2 NExx -> S 2 (Move south if there’s a north wall and an east wall, stay in State 2)
+2 xExx -> S 2 (Move south if there’s an east wall and no other walls, stay in State 2)
+2 xExS -> W 0 (Move west if there’s an east wall and a south wall, transition back to State 0)
