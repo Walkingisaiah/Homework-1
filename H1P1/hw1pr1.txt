@@ -1,0 +1,22 @@
+﻿Decomposition is a great way to make tasks seem much easier in the big picture. Breaking down a large tasks into multiple smaller tasks is a good way to help the person truly understand what they are doing. After breaking down a large task into smaller ones, creating a solution to the larger task at hand would then become much easier than before. 
+
+
+Algorithmic thinking is pretty similar to computational thinking but it is NOT the same. Algorithmic thinking is like breaking a large task into different parts. The parts of the task are not smaller tasks at hand but they are just key components to the larger tasks at hand. You would use these components to create smaller tasks. Algorithmic thinking is used before decomposition. 
+
+
+Abstraction is very similar to algorithmic thinking. The reason I know it’s similar is because of the fact that abstraction is a process in removing unnecessary details and only focusing on the KEY components of the problem at hand. The most important information is what you focus on while the unnecessary parts are removed.
+
+
+Pattern recognition is a unique way in getting a problem solved more efficiently. When breaking down a problem using decomposition you may start to notice patterns. Like for example say you want to make a point system for three different people. When you break the task at hand down you create three smaller tasks. 1. Create system for first person 2. Create point system from second person 3. Create point system for third person. As you can see there is an obvious pattern here. You can reuse the point system for all three people. 
+
+
+1. In everyday life (including in the work-place), how do you already implement elements from computational thinking.  In these contexts, what are specific examples of you applying the ideas of decomposition, abstraction, etc? Elaborate briefly.
+
+
+                In everyday life ther are many different examples of computational thinking. For example, when you first wake up most people think about what they have to do for that day. When I think about what i’m going to do for the day I break down my day into separate tasks like first go to school, second go to work, and third go and workout. That is using decomposition and also algorithmic thinking. 
+
+
+2. Do you believe that the elements of computational thinking used in "everyday life" are fundamentally different compared to how they're used in an academic environment?  Does this undermine or reinforce the contention that street smarts and book smarts are fundamentally different?  Explain!
+
+
+I do not believe that elements from computational thinking used in everyday life are different when compared to how they’re used in an academic environment. I think that there is not a difference because computational thinking is just a way of thinking, you can use it in everyday life and in the school environment. It will be used in the same way no matter what environment you are in. Street smarts and book smarts on the other hand are completely different. People learn things in different ways, saying someone is book smart and not street smart is just an unfair thing to say because there I believe there is no difference between being book smart and street smart they are both essentially talking about the same thing (being smart). I believe that this undermines the idea that street smarts and book smarts are fundamentally different.
